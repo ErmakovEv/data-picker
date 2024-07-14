@@ -1,0 +1,72 @@
+/* CustomStyles.css */
+.react-datepicker {
+  font-family: 'Arial', sans-serif; /* Ваш шрифт */
+}
+
+.react-datepicker__header {
+  background-color: #f0f0f0; /* Цвет фона хедера */
+  border-bottom: 1px solid #ccc; /* Граница хедера */
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  color: #000; /* Цвет текста */
+}
+
+/* Цвет при наведении */
+.react-datepicker__day:hover {
+  background-color: #d3d3d3;
+  color: #000;
+}
+
+/* Цвет выбранного дня */
+.react-datepicker__day--selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Цвет активного дня */
+.react-datepicker__day--keyboard-selected {
+  background-color: #0062cc;
+  color: #fff;
+}
+
+/* Стили для кастомного заголовка */
+.custom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+}
+
+.custom-header button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-header span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Стили для ранее выбранных дней */
+.previously-selected {
+  position: relative;
+}
+
+.previously-selected::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 6px;
+  height: 6px;
+  background-color: red;
+  border-radius: 50%;
+}
